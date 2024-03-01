@@ -60,6 +60,8 @@ console.log(text);
 *The concat() method can take any number of array arguments.
 *
 *Example(Merging Three Arrays) 
+*It has become a common practice to declare arrays using const
+*An array declared with const cannot be reassigned
 ****************************************************************************************/
 
 const arr1 = ["Cecilie", "Lone"];
@@ -116,5 +118,7 @@ for (let i = points.length - 1; i > 0; i--) {
     points[i] = points[j];
     points[j] = k;
 }
-var carentry = cars.entries().toString();
+var carentry = cars.toString(cars.entries());
+//var carentry = cars.entries();
 console.log(carentry);
+
